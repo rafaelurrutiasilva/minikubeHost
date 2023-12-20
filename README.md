@@ -67,7 +67,6 @@ Kubectl Client Version: v1.29.0
 ```
 
 ## Acknowledgments
-Tack och erkännanden. Tex:
 Big thanks to all the people involved in the material I refer to in my links! I would also like to express gratitude to everyone out there, including my colleagues and friends, who are creating things that help and inspire us to continue learning and exploring this never-ending world of computer technology.
 
 ## References
@@ -78,7 +77,7 @@ Slutsats
 
 ## Making the Minikube Host
 ### Basic Configuration of the Photon OS VM
-* Setting *hostname*, running *update*, installing *sudo* and creating the user *labuser*. 
+Setting *hostname*, running *update*, installing *sudo* and creating the user *labuser*. 
 ```
 hostnamectl hostname minikubeHost                                                             
 tdnf update -y
@@ -86,7 +85,7 @@ tdnf install sudo -y
 ```
 
 ### Docker Post-installation
-  https://docs.docker.com/engine/install/linux-postinstall/
+https://docs.docker.com/engine/install/linux-postinstall/
 ```
 systemctl enable docker
 systemctl start docker
@@ -98,25 +97,27 @@ Verify that the user *labuser* can run docker.
 sudo -u labuser docker run hello-world
 ```
 
-### Installing latest *minikube* stable releas
+### Installing Minikube and kubectl
 https://minikube.sigs.k8s.io/docs/start/
+Installing latest *minikube* stable releas.
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 install -m 755 minikube-linux-amd64 /usr/local/bin/minikube
 rm minikube-linux-amd64
 ```
-
-* Installing latest *kubectl* stable releas
+Installing latest *kubectl* stable releas.
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 install -m 0755 kubectl /usr/local/bin/kubectl
 rm kubectl
 ```
-
-* Start Minikube
-Login as *labuser* and start minikube
+### Starting Minikube
+Login as *labuser* and start minikube:
 ```
 sudo -iu labuser
 minikube start
 ```
-
+Checking the status:
+```
+minikube status
+```
