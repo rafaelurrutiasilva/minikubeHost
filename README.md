@@ -111,13 +111,14 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 install -m 0755 kubectl /usr/local/bin/kubectl
 rm kubectl
 ```
-### Starting Minikube
+### Start the cluster
 Login as *labuser* and start minikube:
 ```
 sudo -iu labuser
 minikube start
 ```
-Checking the status:
+Checking the cluster status:
 ```
 minikube status
 ```
+
