@@ -78,10 +78,12 @@ Slutsats
 
 ## Making the Minikube Host
 ### Basic Configuration of the Photon OS VM
-* Setting *hostname* and running update.
+* Setting *hostname*, running *update*, installing *sudo* and creating the user *labuser*. 
 ```
 hostnamectl hostname minikubeHost                                                             
 tdnf update -y
+tdnf install sudo -y
+useradd  -m labuser 
 ```
 * Installing latest *minikube* stable releas
 ```
