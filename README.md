@@ -154,5 +154,6 @@ iptables-save > /etc/systemd/scripts/ip4save
 ### Using port forwarding via kubectl 
 Log in as the *labuser* and initiate port forwarding using the kubectl command. You should then be able to browse to the IP address of the Minikube Host VM and the forwarded port.
 ```
-kubectl port-forward --address 192.168.157.133 service/hello-minikube 8080:8080
+minikubeHostIP=$(ip address |grep inet |grep eth0 |awk '{print$2}' |sed 's,/24,,g')
+kubectl port-forward --address $minikubeHostIP service/hello-minikube 8080:8080
 ```
