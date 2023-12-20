@@ -1,6 +1,9 @@
 # Minikube Host on a Photon OS VM
 <img width="300" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MinikubeOnPhotonOS.svg" align=left><br>
 <br>
+Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. 
+I've been working and testing with a Photon OS VM as a Container Host. I'll now apply this knowledge to create a Minikube Host based on the same OS.
+
 Titel på dokumentet<br>
 Författare<br>
 Publiceringsdatum<br>
@@ -126,6 +129,7 @@ Checking the cluster status:
 minikube status
 ```
 ## Interacting with the cluster
+https://kubernetes.io/docs/tutorials/hello-minikube/
 ## Deploying hello-minikube
 Test to deaploy the first application, *hello-minikube* and expose it on port 8080
 ```
@@ -156,4 +160,10 @@ Log in as the *labuser* and initiate port forwarding using the kubectl command. 
 ```
 minikubeHostIP=$(ip address |grep inet |grep eth0 |awk '{print$2}' |sed 's,/24,,g')
 kubectl port-forward --address $minikubeHostIP service/hello-minikube 8080:8080
+```
+## Clean up
+Now you can clean up the resources  created in the cluster.
+```
+kubectl delete service hello-minikube
+kubectl delete deployment hello-minikube
 ```
