@@ -83,11 +83,9 @@ Slutsats
 hostnamectl hostname minikubeHost                                                             
 tdnf update -y
 tdnf install sudo -y
-useradd  -m labuser
-usermod -aG docker labuser 
 ```
 
-* Docker Post-installation
+### Docker Post-installation
   https://docs.docker.com/engine/install/linux-postinstall/
 ```
 systemctl enable docker
@@ -95,13 +93,13 @@ systemctl start docker
 useradd  -m labuser
 usermod -aG docker labuser 
 ```
-
-* Verify that the user *labuser* can run docker. 
+Verify that the user *labuser* can run docker. 
 ```
 sudo -u labuser docker run hello-world
 ```
 
-* Installing latest *minikube* stable releas
+### Installing latest *minikube* stable releas
+https://minikube.sigs.k8s.io/docs/start/
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 install -m 755 minikube-linux-amd64 /usr/local/bin/minikube
