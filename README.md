@@ -11,18 +11,20 @@ Publiceringsdatum<br>
 Kort sammanfattning av dokumentet
 
 ## Table of Contents
+1. [Introduction](#introduction)
+2. [Goals and Objectives](#goals-and-objectives)
+3. [Method](#method)
+4. [Target Audience](#target-audience)
+5. [Document Status](#document-status)
+6. [Disclaimer](#disclaimer)
+7. [Scope and Limitations](#scope-and-limitations)
+8. [Environment](#environment)
+9. [Acknowledgments](#acknowledgments)
+10. [References](#references)
+11. [Conclusion](#conclusion)
+12. [Making the Minikube Host](#making-the-minikube-host)
+    1. [Basic configuration of the  Photon OS VM](#basic-configuration-of-the-photon-os-vm)
 
-1. [Introduction](README.md#introduction)
-2. [Goals and Objectives](README.md#goals-and-objectives)
-3. [Method](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#method)
-4. [Target Audience](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#target-audience)
-5. [Document Status](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#document-status)
-6. [Disclaimer](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#disclaimer)
-7. [Scope and Limitations](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#scope-and-limitations)
-8. [Environment](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#environment)
-9. [Acknowledgments](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#acknowledgments)
-10. [References](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#references)
-11. [Conclusion](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#conclusion)
 
 ## Introduction
 Inledning
@@ -64,8 +66,8 @@ Referenser (om det behövs)
 ## Conclusion
 Slutsats
 
-## Making Photon OS VM a Minikube Host
-### Basic configuration
+## Making the Minikube Host
+### Basic configuration of the  Photon OS VM
 ```
 hostnamectl hostname minikubeHost                      # Setting the hostname to minikubeHost
 tdnf update -y
