@@ -72,11 +72,13 @@ Slutsats
 hostnamectl hostname minikubeHost                                                             
 tdnf update -y
 * Installing latest *minikube* stable releas
+
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 install -m 755 minikube-linux-amd64 /usr/local/bin/minikube
 rm minikube-linux-amd64
 ```
+
 * Installing latest *kubectl* stable releas
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
