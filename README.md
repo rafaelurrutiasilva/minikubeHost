@@ -1,17 +1,13 @@
 # Minikube Host on a Photon OS VM
 <img width="300" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MinikubeOnPhotonOS.svg" align=left><br>
+[Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. 
 <br>
-Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. 
-I've been working and testing with a Photon OS VM as a Container Host. I'll now apply this knowledge to create a Minikube Host based on the same OS.
-
-Titel på dokumentet<br>
-Författare<br>
-Publiceringsdatum<br>
-
 <br>
+<br>
+
 
 ## Abstract
-Kort sammanfattning av dokumentet
+I have been working and testing with a [Photon OS VM as a Container Host](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker), evaluating Grafana, Prometheus, Metrics from Harbor, and more. Now, I'll apply this knowledge to create a Minikube Host based on the same OS. This will serve as the foundation for various deployments, using Minikube as my Kubernetes cluster. 
 
 ## Table of Contents
 1. [Introduction](#introduction)
