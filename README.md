@@ -1,5 +1,5 @@
-# Title Page
-<img width="100" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MyLogo_2.png" align=left><br>
+# Minikube Host on a Photon OS VM
+<img width="300" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MinikubeOnPhotonOS.svg" align=left><br>
 <br>
 Titel på dokumentet<br>
 Författare<br>
