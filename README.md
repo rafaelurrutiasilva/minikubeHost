@@ -23,7 +23,7 @@ Kort sammanfattning av dokumentet
 10. [References](#references)
 11. [Conclusion](#conclusion)
 12. [Making the Minikube Host](#making-the-minikube-host)
-    1. [Basic configuration of the  Photon OS VM](#basic-configuration-of-the-photon-os-vm)
+    1. [Basic Configuration of the Photon OS VM](#basic-configuration-of-the-photon-os-vm)
 
 
 ## Introduction
@@ -67,7 +67,7 @@ Referenser (om det behövs)
 Slutsats
 
 ## Making the Minikube Host
-### Basic configuration of the  Photon OS VM
+### Basic Configuration of the Photon OS VM
 ```
 hostnamectl hostname minikubeHost                      # Setting the hostname to minikubeHost
 tdnf update -y
