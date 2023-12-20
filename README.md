@@ -63,3 +63,11 @@ Referenser (om det behövs)
 
 ## Conclusion
 Slutsats
+
+## Making Photon OS VM a Minikube Host
+### Basic configuration
+```
+hostnamectl hostname minikubeHost                      # Setting the hostname to minikubeHost
+tdnf update -y
+tdnf install tar jq git docker-compose
+```
