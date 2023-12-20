@@ -40,7 +40,6 @@ Hur vi gjorde det. Tillvägagångssätt. Vårt sätt
 Målgrupp
 
 ## Document Status
-Dokumentstatus (om det finns relevant information om dokumentets status, till exempel utkast, slutfört, etc.). Tex:
 > [!NOTE]  
 > My work here is not finished yet. I need, among other things, to supplement with instructions on how each component should be configured to work together as well supplement with an overview image that explains how the whole thing works.
 
