@@ -69,7 +69,9 @@ Slutsats
 ## Making the Minikube Host
 ### Basic Configuration of the Photon OS VM
 ```
-hostnamectl hostname minikubeHost                      # Setting the hostname to minikubeHost
+hostnamectl hostname minikubeHost                                                              # Setting the hostname to minikubeHost
 tdnf update -y
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64          # Using the latest minikube stable releas
+install -m 755 minikube-linux-amd64 /usr/local/bin/minikube
 tdnf install tar jq git docker-compose
 ```
