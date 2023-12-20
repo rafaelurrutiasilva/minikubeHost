@@ -67,10 +67,19 @@ Slutsats
 
 ## Making the Minikube Host
 ### Basic Configuration of the Photon OS VM
+* Setting *hostname* and running update.
 ```
-hostnamectl hostname minikubeHost                                                              # Setting the hostname to minikubeHost
+hostnamectl hostname minikubeHost                                                             
 tdnf update -y
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64          # Using the latest minikube stable releas
+* Installing latest *minikube* stable releas
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 install -m 755 minikube-linux-amd64 /usr/local/bin/minikube
-tdnf install tar jq git docker-compose
+rm minikube-linux-amd64
+```
+* Installing latest *kubectl* stable releas
+```
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+install -m 0755 kubectl /usr/local/bin/kubectl
+rm kubectl
 ```
