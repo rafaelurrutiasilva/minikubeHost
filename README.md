@@ -145,8 +145,13 @@ This will show a URL information that can be used for test localy in the Minikub
 curl http://192.168.49.2:30935
 ```
 ## Enabling port forwarding
+### Firewall configuration
 Use *kubectl* to forward the port. For this to work, configure the desired port on the Minikube Host firewall using root privileges. Make sure the port chosen is a higher number, so *labuser* can do the port forwarding
 ```
 iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
 iptables-save > /etc/systemd/scripts/ip4save
+```
+### Using  
+```
+kubectl port-forward --address 192.168.157.133 service/hello-minikube 8080:8080
 ```
