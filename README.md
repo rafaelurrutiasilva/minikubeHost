@@ -24,6 +24,10 @@ Kort sammanfattning av dokumentet
 11. [Conclusion](#conclusion)
 12. [Making the Minikube Host](#making-the-minikube-host)
     1. [Basic Configuration of the Photon OS VM](#basic-configuration-of-the-photon-os-vm)
+    2. Docker Post-installation
+    3. Installing Minikube and kubectl
+    4. Test start the cluster
+13. 
 
 
 ## Introduction
@@ -111,7 +115,7 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 install -m 0755 kubectl /usr/local/bin/kubectl
 rm kubectl
 ```
-### Start the cluster
+### Test start the cluster
 Login as *labuser* and start minikube:
 ```
 sudo -iu labuser
@@ -121,4 +125,28 @@ Checking the cluster status:
 ```
 minikube status
 ```
-
+## Interacting with the cluster
+## Deploying hello-minikube
+Test to deaploy the first application, *hello-minikube* and expose it on port 8080
+```
+kubectl create deployment hello-minikube --image=kicbase/echo-server:1.0
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+```
+Check the deployment, it will soon show up when the fallowing command is run.
+```
+kubectl get services hello-minikube
+```
+Let minikube give us access this service.
+```
+minikube service hello-minikube
+```
+This will show a URL information that can be used for test localy in the Minikube Host
+```
+curl http://192.168.49.2:30935
+```
+## Enabling port forwarding
+Use *kubectl* to forward the port. For this to work, configure the desired port on the Minikube Host firewall using root privileges. Make sure the port chosen is a higher number, so *labuser* can do the port forwarding
+```
+iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+iptables-save > /etc/systemd/scripts/ip4save
+```
