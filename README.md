@@ -13,7 +13,7 @@ Kort sammanfattning av dokumentet
 ## Table of Contents
 
 1. [Introduction](README.md#introduction)
-2. [Goals and Objectives](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#goals-and-objectives)
+2. [Goals and Objectives](README.md#goals-and-objectives)
 3. [Method](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#method)
 4. [Target Audience](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#target-audience)
 5. [Document Status](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker/tree/main#document-status)
