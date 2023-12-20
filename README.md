@@ -102,7 +102,7 @@ sudo -u labuser docker run hello-world
 ```
 
 ### Installing Minikube and kubectl
-https://minikube.sigs.k8s.io/docs/start/
+https://minikube.sigs.k8s.io/docs/start/ <br>
 Installing latest *minikube* stable releas.
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
