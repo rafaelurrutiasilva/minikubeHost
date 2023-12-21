@@ -31,7 +31,6 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
 
 
 ## Introduction
-<!--- https://kubernetes.io/docs/concepts/overview/ --->
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/) is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) can be the ideal learning platform when delivering Kubernetes training. The [Photon OS](https://vmware.github.io/photon/) is a Linux based, open source, security-hardened, enterprise grade appliance operating system that is purpose built for Cloud and Edge applications.<br>
 I thought that the combination of a Virtual Machine created with Photon OS and Minikube installed would be the perfect lab environment for my journey in learning Kubernetes. I also need the VM to be easily recreated whenever necessary, with simplicity and speed. 
 
@@ -51,7 +50,6 @@ This guide is designed for individuals seeking to explore and gain insights into
 
 
 ## Disclaimer
-Ansvarsfriskrivning. Tex:
 > [!CAUTION]
 > This is intended for learning, testing, and experimentation. The emphasis is not on security or creating an operational environment suitable for production.
 
@@ -76,7 +74,14 @@ Kubectl Client Version: v1.29.0
 Big thanks to all the people involved in the material I refer to in my links! I would also like to express gratitude to everyone out there, including my colleagues and friends, who are creating things that help and inspire us to continue learning and exploring this never-ending world of computer technology.
 
 ## References
-Referenser (om det behövs)
+* [Downloading Photon OS](https://github.com/vmware/photon/wiki/Downloading-Photon-OS)
+* [Photon OS](https://vmware.github.io/photon/)
+* [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro)
+* [Container Host using a Photon OS VM](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker)
+* [Kubernetes](https://kubernetes.io/docs/concepts/overview/)
+* [Docker Postinstallation](https://docs.docker.com/engine/install/linux-postinstall)
+* 
+
 
 ## Conclusion
 Slutsats
@@ -91,7 +96,7 @@ tdnf install sudo -y
 ```
 
 ### Docker Post-installation
-https://docs.docker.com/engine/install/linux-postinstall/
+This Docker post-installation is necessary to meet the requirement of starting and running Minikube either as a non-privileged user or by using sudo. In this guide, I create a *labuser*, who runs Minikube throughout all the documented steps.
 ```
 systemctl enable docker
 systemctl start docker
