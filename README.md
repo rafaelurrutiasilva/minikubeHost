@@ -37,7 +37,7 @@ I thought that the combination of a Virtual Machine created with Photon OS and M
 
 
 ## Goals and Objectives
-Mål och syften
+Create a Minikube Host VM based on Photon OS. The VM should be equipped with all the necessary tools to interact with Kubernetes clusters (Minikube) and should be easily reproducible as needed. Document all the required steps and instructions thoroughly.
 
 ## Method
 Hur vi gjorde det. Tillvägagångssätt. Vårt sätt
