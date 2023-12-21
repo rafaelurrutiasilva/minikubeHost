@@ -8,7 +8,7 @@
 
 
 ## Abstract
-I have been working on a [Container Host using a Photon OS VM](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker) to test Grafana, Prometheus, and metrics from Harbor. Now, I will use this knowledge to set up a Minikube Host on the same operating system as a foundation for various deployments in my Kubernetes cluster (Minikube).
+I have been developing a [Container Host using a Photon OS VM](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker) to conduct tests with Grafana, Prometheus, and metrics sourced from Harbor. Currently, I am applying this expertise to establish a Minikube Host on the same operating system, serving as the groundwork for diverse deployments within my Kubernetes cluster (Minikube).
 
 ## Table of Contents
 1. [Introduction](#introduction)
