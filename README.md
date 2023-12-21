@@ -40,7 +40,7 @@ I thought that the combination of a Virtual Machine created with Photon OS and M
 Create a Minikube Host VM based on Photon OS. The VM should be equipped with all the necessary tools to interact with Kubernetes clusters (Minikube) and should be easily reproducible as needed. Document all the required steps and instructions thoroughly.
 
 ## Method
-I start downloading a [OVA-file for Photon OS](https://github.com/vmware/photon/wiki/Downloading-Photon-OS). I use that for create av VM with the estimated resours configuration I need for my labs. The VM is the preparated with Minikube, Kubectl
+I begin by downloading a [OVA-file for Photon OS](https://github.com/vmware/photon/wiki/Downloading-Photon-OS). I utilize this file to create a VM with the estimated resource configuration required for my labs. Subsequently, I prepare the VM by installing Minikube, Kubectl, Helm, and other tools essential for practical Kubernetes training and learning."
 
 Hur vi gjorde det. Tillvägagångssätt. Vårt sätt
 
