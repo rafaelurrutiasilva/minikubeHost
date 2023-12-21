@@ -173,5 +173,8 @@ kubectl delete deployment hello-minikube
 minikube stop
 ```
 > [!TIP]
-Using *stop* will stops a local Kubernetes cluster. This command stops the underlying VM or container, but keeps user data intact. The
-cluster can be started again with the "start" command.
+Using *stop* command will stops a local Kubernetes cluster. This command stops the underlying VM or container, but keeps user data intact. The
+cluster can be started again with the *start* command.<br>
+Using *deletes* command will a local Kubernetes cluster. This command deletes the VM, and removes all associated files.
+Use ***minikube options*** for a list of global command-line options (applies to all commands).
+
