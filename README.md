@@ -76,12 +76,12 @@ Big thanks to all the people involved in the material I refer to in my links! I 
 ## References
 * [Downloading Photon OS](https://github.com/vmware/photon/wiki/Downloading-Photon-OS)
 * [Photon OS](https://vmware.github.io/photon/)
-* [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro)
 * [Container Host using a Photon OS VM](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker)
-* [Kubernetes](https://kubernetes.io/docs/concepts/overview/)
+* [Minikube Start](https://minikube.sigs.k8s.io/docs/start)
 * [Docker Postinstallation](https://docs.docker.com/engine/install/linux-postinstall)
-* 
-
+* [Hello-Minikube](https://kubernetes.io/docs/tutorials/hello-minikube)
+* [kubectl to Create a Deployment](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro)
+* [Kubernetes](https://kubernetes.io/docs/concepts/overview/)
 
 ## Conclusion
 Slutsats
@@ -109,7 +109,6 @@ sudo -u labuser docker run hello-world
 ```
 
 ### Installing Minikube and kubectl
-https://minikube.sigs.k8s.io/docs/start/ <br>
 Installing latest *minikube* stable releas.
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
