@@ -40,12 +40,10 @@ I thought that the combination of a Virtual Machine created with Photon OS and M
 Create a Minikube Host VM based on Photon OS. The VM should be equipped with all the necessary tools to interact with Kubernetes clusters (Minikube) and should be easily reproducible as needed. Document all the required steps and instructions thoroughly.
 
 ## Method
-I begin by downloading a [OVA-file for Photon OS](https://github.com/vmware/photon/wiki/Downloading-Photon-OS). I utilize this file to create a VM with the estimated resource configuration required for my labs. Subsequently, I prepare the VM by installing Minikube, Kubectl, Helm, and other tools essential for practical Kubernetes training and learning."
-
-Hur vi gjorde det. Tillvägagångssätt. Vårt sätt
+I begin by downloading a [OVA-file for Photon OS](https://github.com/vmware/photon/wiki/Downloading-Photon-OS). I utilize this file to create a VM with the estimated resource configuration required for my labs. Subsequently, I prepare the VM by installing Minikube, Kubectl, Helm, and other tools essential for practical Kubernetes training and learning. The VM will also be saved as a OVA file for easely be used to speen of new VMs. The VM will also be saved as an OVA file for easy duplication and rapid provisioning of new VMs.
 
 ## Target Audience
-Målgrupp
+This guide is designed for individuals seeking to explore and gain insights into testing and learning Kubernetes. It is especially tailored for beginners, like myself, who are just starting their journey and need a reliable home platform for doing so.
 
 ## Document Status
 > [!NOTE]  
@@ -58,7 +56,7 @@ Ansvarsfriskrivning. Tex:
 > This is intended for learning, testing, and experimentation. The emphasis is not on security or creating an operational environment suitable for production.
 
 ## Scope and Limitations
-Omfattning och begränsningar
+This guide provides a rapid method to establish a home Kubernetes environment for testing modern applications on a single Minikube Host VM. It is important to note that this guide is not intended for use as a reference in a production environment and does not comprehensively cover all the security considerations required for such an environment.
 
 ## Environment
 > [!TIP]
