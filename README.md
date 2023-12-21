@@ -178,3 +178,6 @@ cluster can be started again with the *start* command.<br>
 Using *deletes* command will a local Kubernetes cluster. This command deletes the VM, and removes all associated files.
 Use ***minikube options*** for a list of global command-line options (applies to all commands).
 
+## Next - Hello Minikube
+> [!TIP]
+The [hello-minikube](https://kubernetes.io/docs/tutorials/hello-minikube) tutorial guides you through running a sample app on Kubernetes using Minikube and serves as a good *next step* in exploring Kubernetes.
