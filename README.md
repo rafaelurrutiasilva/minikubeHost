@@ -1,6 +1,6 @@
 # Minikube Host on a Photon OS VM
 <img width="300" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MinikubeOnPhotonOS.svg" align=left><br>
-[Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. 
+Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. 
 <br>
 <br>
 <br>
@@ -31,6 +31,9 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
 
 
 ## Introduction
+<!--- https://kubernetes.io/docs/concepts/overview/ --->
+[Kubernetes](https://kubernetes.io/docs/concepts/overview/) is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) can be the ideal learning platform when delivering Kubernetes training. The [Photon OS](https://vmware.github.io/photon/) is a Linux based, open source, security-hardened, enterprise grade appliance operating system that is purpose built for Cloud and Edge applications
+
 Inledning
 Bakgrund och syfte. Eventuell översiktbild här.
 
