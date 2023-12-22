@@ -29,7 +29,15 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
     4. Test start the cluster
     5. Checking the cluster status
 13. Interacting with the cluster
-Deploying hello-minikube, Checking the deployment, Giving access to service, Enabling port forwarding, Firewall configuration, Using port forwarding via kubectl, Clean up and stop Minikube
+    1. Deploying hello-minikube
+    2. Checking the deployment
+    3. Giving access to service
+14. Enabling port forwarding
+    1. Firewall configuration
+    2. Using port forwarding via kubectl
+15. Clean up and stop Minikube
+16. 
+17. Next - Hello Minikube
 
 ## Introduction
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/) is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) can be the ideal learning platform when delivering Kubernetes training. The [Photon OS](https://vmware.github.io/photon/) is a Linux based, open source, security-hardened, enterprise grade appliance operating system that is purpose built for Cloud and Edge applications.<br>
