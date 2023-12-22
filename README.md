@@ -36,8 +36,11 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
     1. [Firewall configuration](#firewall-configuration)
     2. [Using port forwarding](#using-port-forwarding)
 15. [Clean up and stop Minikube](#clean-up-and-stop-minikube)
-16. 
-17. Next - Hello Minikube
+16. [Minikube and multi node clusters](#minikube-and-multi-node-clusters)
+    1. [Three node cluster](#three-node-cluster)
+    2. [Get nodes](#get-nodes)
+    3. Labeling the worker nodes](#labeling-the-worker-nodes)
+18. [Next - Hello Minikube](#next---hello-minikube)
 
 ## Introduction
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/) is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) can be the ideal learning platform when delivering Kubernetes training. The [Photon OS](https://vmware.github.io/photon/) is a Linux based, open source, security-hardened, enterprise grade appliance operating system that is purpose built for Cloud and Edge applications.<br>
@@ -218,7 +221,7 @@ To prevent deploying applications to the 'control-plane,' we need to label the o
 kubectl label node illusion-m02 node-role.kubernetes.io/worker=worker
 kubectl label node illusion-m03 node-role.kubernetes.io/worker=worker
 ```
-
+You may want to again using `kubectl get nodes`.
 
 
 ## Next - Hello Minikube
