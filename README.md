@@ -199,6 +199,28 @@ By default, Minikube uses a single node in the created cluster. For a more reali
 <img width="600" alt="KubernetesComponents" src="https://github.com/rafaelurrutiasilva/images/blob/main/system_overview/Kubernetes%20Components.png" align=center><br>
 *Figure 01 provides an overview of the various components within a Kubernetes cluster.*
 
+### Three node cluster
+Here, I will demonstrate how to create a three-node cluster, comprising one master node (control-plane) and two worker nodes. I have named it *illusion*. Achieve this by executing the following command.
+```
+su - labuser
+minikube start --nodes 3 -p illusion
+```
+It might take a few minutes, but Minikube will give you updates as it progresses and will finish with a 'Done' message.
+
+### Get nodes
+You can control and view the three nodes that were just created using the following command.
+```
+kubectl get nodes
+```
+### Labeling the Worker Nodes
+To prevent deploying applications to the 'control-plane,' we need to label the other nodes as 'worker.' In my case, this can be accomplished using the command below, applying it to each node.
+```
+kubectl label node illusion-m02 node-role.kubernetes.io/worker=worker
+kubectl label node illusion-m03 node-role.kubernetes.io/worker=worker
+```
+
+
+
 ## Next - Hello Minikube
 > [!TIP]
 The [hello-minikube](https://kubernetes.io/docs/tutorials/hello-minikube) tutorial guides you through running a sample app on Kubernetes using Minikube and serves as a good *next step* in exploring Kubernetes.
