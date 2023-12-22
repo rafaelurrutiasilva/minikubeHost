@@ -225,7 +225,7 @@ kubectl label node illusion-m02 node-role.kubernetes.io/worker=worker
 kubectl label node illusion-m03 node-role.kubernetes.io/worker=worker
 ```
 You may want to again using `kubectl get nodes`.<br>
-<img width="600" alt="GetLabelNodes" src="https://github.com/rafaelurrutiasilva/images/blob/main/printscreen/minikube_multi-node_cluster_03.png" align=center><br>
+<img width="600" alt="GetLabelNodes" src="https://github.com/rafaelurrutiasilva/images/blob/main/printscreen/minikube_multi-node_cluster_02.png" align=center><br>
 *Figure 03 shows the result after labeling the nodes.*
 
 
