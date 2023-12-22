@@ -215,7 +215,7 @@ You can control and view the three nodes that were just created using the follow
 ```
 kubectl get nodes
 ```
-<img width="600" alt="KubernetesComponents" src="https://github.com/rafaelurrutiasilva/images/blob/main/printscreen/minikube_multi-node_cluster_01.png" align=center><br>
+<img width="600" alt="GetNodes" src="https://github.com/rafaelurrutiasilva/images/blob/main/printscreen/minikube_multi-node_cluster_01.png" align=center><br>
 *Figure 02 shows the result of the command.*
 
 ### Labeling the Worker Nodes
@@ -224,8 +224,8 @@ To prevent deploying applications to the 'control-plane,' we need to label the o
 kubectl label node illusion-m02 node-role.kubernetes.io/worker=worker
 kubectl label node illusion-m03 node-role.kubernetes.io/worker=worker
 ```
-You may want to again using `kubectl get nodes`.
-<img width="600" alt="KubernetesComponents" src="https://github.com/rafaelurrutiasilva/images/blob/main/printscreen/minikube_multi-node_cluster_03.png" align=center><br>
+You may want to again using `kubectl get nodes`.<br>
+<img width="600" alt="GetLabelNodes" src="https://github.com/rafaelurrutiasilva/images/blob/main/printscreen/minikube_multi-node_cluster_03.png" align=center><br>
 *Figure 03 shows the result after labeling the nodes.*
 
 
