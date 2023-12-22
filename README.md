@@ -32,8 +32,7 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
 
 ## Introduction
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/) is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) can be the ideal learning platform when delivering Kubernetes training. The [Photon OS](https://vmware.github.io/photon/) is a Linux based, open source, security-hardened, enterprise grade appliance operating system that is purpose built for Cloud and Edge applications.<br>
-I thought that the combination of a Virtual Machine created with Photon OS and Minikube installed would be the perfect lab environment for my journey in learning Kubernetes. I also need the VM to be easily recreated whenever necessary, with simplicity and speed. 
-
+I thought that the combination of a Virtual Machine created with Photon OS and Minikube installed would be the perfect lab environment for my journey in learning Kubernetes. The benefit of setting up a VM with all necessary lab components is the ability to easily prepare and store it as a template or OVA file. This streamlines the process of creating VMs for future use. After completing the lab, the VM can be deleted, ready to be recreated when needed again.
 
 ## Goals and Objectives
 Create a Minikube Host VM based on Photon OS. The VM should be equipped with all the necessary tools to interact with Kubernetes clusters (Minikube) and should be easily reproducible as needed. Document all the required steps and instructions thoroughly.
