@@ -30,12 +30,12 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
     5. [Checking the cluster status](#checking-the-cluster-status)
 13. [Interacting with the cluster](#interacting-with-the-cluster)
     1. [Deploying hello-minikube](#deploying-hello-minikube)
-    2. Checking the deployment
-    3. Giving access to service
-14. Enabling port forwarding
-    1. Firewall configuration
-    2. Using port forwarding via kubectl
-15. Clean up and stop Minikube
+    2. [Checking the deployment](#checking-the-deployment)
+    3. [Giving access to service](#giving-access-to-service)
+14. [Enabling port forwarding](#enabling-port-forwarding)
+    1. [Firewall configuration](#firewall-configuration)
+    2. [Using port forwarding](#using-port-forwarding)
+15. [Clean up and stop Minikube](#clean-up-and-stop-minikube)
 16. 
 17. Next - Hello Minikube
 
@@ -174,8 +174,8 @@ Use *kubectl* to forward the port. For this to work, configure the desired port 
 iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
 iptables-save > /etc/systemd/scripts/ip4save
 ```
-### Using port forwarding via kubectl 
-Log in as the *labuser* and initiate port forwarding using the kubectl command. You should then be able to browse to the IP address of the Minikube Host VM and the forwarded port.
+### Using port forwarding
+You can initiate port forwarding using the *kubectl* command. Log in as the *labuser* and execute the following command. Afterward, you should be able to browse to the IP address of the Minikube Host VM and the forwarded port
 ```
 minikubeHostIP=$(ip address |grep inet |grep eth0 |awk '{print$2}' |sed 's,/24,,g')
 kubectl port-forward --address $minikubeHostIP service/hello-minikube 8080:8080
@@ -187,6 +187,7 @@ kubectl delete service hello-minikube
 kubectl delete deployment hello-minikube
 minikube stop
 ```
+
 > [!TIP]
 Using *stop* command will stops a local Kubernetes cluster. This command stops the underlying VM or container, but keeps user data intact. The
 cluster can be started again with the *start* command.<br>
