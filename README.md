@@ -27,8 +27,9 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
     2. Docker Post-installation
     3. Installing Minikube and kubectl
     4. Test start the cluster
-13. 
-
+    5. Checking the cluster status
+13. Interacting with the cluster
+Deploying hello-minikube, Checking the deployment, Giving access to service, Enabling port forwarding, Firewall configuration, Using port forwarding via kubectl, Clean up and stop Minikube
 
 ## Introduction
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/) is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. [Minikube](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro) can be the ideal learning platform when delivering Kubernetes training. The [Photon OS](https://vmware.github.io/photon/) is a Linux based, open source, security-hardened, enterprise grade appliance operating system that is purpose built for Cloud and Edge applications.<br>
@@ -77,6 +78,7 @@ Big thanks to all the people involved in the material I refer to in my links! I 
 * [Photon OS](https://vmware.github.io/photon/)
 * [Container Host using a Photon OS VM](https://github.com/rafaelurrutiasilva/Harbor_Grafana_Prometheus_on_Docker)
 * [Minikube Start](https://minikube.sigs.k8s.io/docs/start)
+* [Minikube Status](https://minikube.sigs.k8s.io/docs/commands/status/#minikube-status)
 * [Docker Postinstallation](https://docs.docker.com/engine/install/linux-postinstall)
 * [Hello-Minikube](https://kubernetes.io/docs/tutorials/hello-minikube)
 * [kubectl to Create a Deployment](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro)
@@ -126,30 +128,37 @@ Login as *labuser* and start minikube:
 sudo -iu labuser
 minikube start
 ```
-Checking the cluster status:
+### Checking the cluster status
+Gets the status of the local Kubernetes cluster using the command [minikube status](https://minikube.sigs.k8s.io/docs/commands/status/#minikube-status).
 ```
 minikube status
 ```
+
 ## Interacting with the cluster
-https://kubernetes.io/docs/tutorials/hello-minikube/
-## Deploying hello-minikube
-Test to deaploy the first application, *hello-minikube* and expose it on port 8080
+### Deploying hello-minikube
+Test to deaploy the first application, [hello-minikube](https://kubernetes.io/docs/tutorials/hello-minikube) and expose it on port 8080
 ```
 kubectl create deployment hello-minikube --image=kicbase/echo-server:1.0
 kubectl expose deployment hello-minikube --type=NodePort --port=8080
 ```
-Check the deployment, it will soon show up when the fallowing command is run.
+
+### Checking the deployment 
+It will soon shows up when the fallowing command is run.
 ```
 kubectl get services hello-minikube
 ```
-Let minikube give us access this service.
+
+### Giving access to service.
+Minikube provides access to the actual service by running the command below.
 ```
 minikube service hello-minikube
 ```
-This will show a URL information that can be used for test localy in the Minikube Host
+
+This will display a URL that can be used for local testing within the Minikube host.
 ```
 curl http://192.168.49.2:30935
 ```
+
 ## Enabling port forwarding
 ### Firewall configuration
 Use *kubectl* to forward the port. For this to work, configure the desired port on the Minikube Host firewall using root privileges. Make sure the port chosen is a higher number, so *labuser* can do the port forwarding
