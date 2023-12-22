@@ -24,12 +24,12 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
 11. [Conclusion](#conclusion)
 12. [Making the Minikube Host](#making-the-minikube-host)
     1. [Basic Configuration of the Photon OS VM](#basic-configuration-of-the-photon-os-vm)
-    2. Docker Post-installation
-    3. Installing Minikube and kubectl
-    4. Test start the cluster
-    5. Checking the cluster status
-13. Interacting with the cluster
-    1. Deploying hello-minikube
+    2. [Docker Post-installation](#docker-post-installation)
+    3. [Installing Minikube and kubectl](#installing-minikube-and-kubectl)
+    4. [Test-start-the-cluster](3test-start-the-cluster)
+    5. [Checking the cluster status](#checking-the-cluster-status)
+13. [Interacting with the cluster](#interacting-with-the-cluster)
+    1. [Deploying hello-minikube](#deploying-hello-minikube)
     2. Checking the deployment
     3. Giving access to service
 14. Enabling port forwarding
