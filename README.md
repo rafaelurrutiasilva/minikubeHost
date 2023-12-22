@@ -90,6 +90,7 @@ Big thanks to all the people involved in the material I refer to in my links! I 
 * [Docker Postinstallation](https://docs.docker.com/engine/install/linux-postinstall)
 * [Hello-Minikube](https://kubernetes.io/docs/tutorials/hello-minikube)
 * [kubectl to Create a Deployment](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro)
+* [Minikube and Multi Node](https://minikube.sigs.k8s.io/docs/tutorials/multi_node)
 * [Kubernetes](https://kubernetes.io/docs/concepts/overview/)
 
 ## Conclusion
@@ -187,12 +188,16 @@ kubectl delete service hello-minikube
 kubectl delete deployment hello-minikube
 minikube stop
 ```
-
 > [!TIP]
 Using *stop* command will stops a local Kubernetes cluster. This command stops the underlying VM or container, but keeps user data intact. The
 cluster can be started again with the *start* command.<br>
 Using *deletes* command will a local Kubernetes cluster. This command deletes the VM, and removes all associated files.
 Use ***minikube options*** for a list of global command-line options (applies to all commands).
+
+## Minikube and multi node clusters
+By default, Minikube uses a single node in the created cluster. For a more realistic experience in deploying applications within a production-like cluster, you can configure Minikube to use multiple nodes.
+<img width="500" alt="KubernetesComponents" src="https://github.com/rafaelurrutiasilva/images/blob/main/system_overview/Kubernetes%20Components.png" align=center><br>
+
 
 ## Next - Hello Minikube
 > [!TIP]
