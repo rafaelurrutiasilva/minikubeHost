@@ -97,7 +97,7 @@ Big thanks to all the people involved in the material I refer to in my links! I 
 * [Kubernetes](https://kubernetes.io/docs/concepts/overview/)
 
 ## Conclusion
-It was not difficult to create a VM-based Minikube host. The VM has been saved as an OVA file for effortless duplication and quick provisioning of new VMs. This enables me to easily provision new VMs when needed. The creation of a completely new one can also be done by running my script BABAS.
+It was not difficult to create a VM-based Minikube host. The VM has been saved as an OVA file for effortless duplication and quick provisioning of new VMs. This enables me to easily provision new VMs when needed. The creation of a completely new one can also be done by running my script [BABAS](Code/BABAS).
 
 ## Making the Minikube Host
 ### Basic Configuration of the Photon OS VM
