@@ -39,7 +39,7 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
 16. [Minikube and multi node clusters](#minikube-and-multi-node-clusters)
     1. [Three node cluster](#three-node-cluster)
     2. [Get nodes](#get-nodes)
-    3. Labeling the worker nodes](#labeling-the-worker-nodes)
+    3. [Labeling the worker nodes](#labeling-the-worker-nodes)
 18. [Next - Hello Minikube](#next---hello-minikube)
 
 ## Introduction
