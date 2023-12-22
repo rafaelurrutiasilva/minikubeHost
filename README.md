@@ -195,7 +195,7 @@ Using *deletes* command will a local Kubernetes cluster. This command deletes th
 Use ***minikube options*** for a list of global command-line options (applies to all commands).
 
 ## Minikube and multi node clusters
-By default, Minikube uses a single node in the created cluster. For a more realistic experience in deploying applications within a production-like cluster, you can configure Minikube to use multiple nodes.<br>
+By default, Minikube uses a single node in the created cluster. For a more realistic experience in deploying applications within a production-like cluster, you can configure [Minikube to use multiple nodes](https://minikube.sigs.k8s.io/docs/tutorials/multi_node/).<br>
 <img width="600" alt="KubernetesComponents" src="https://github.com/rafaelurrutiasilva/images/blob/main/system_overview/Kubernetes%20Components.png" align=center><br>
 *Figure 01 provides an overview of the various components within a Kubernetes cluster.*
 
