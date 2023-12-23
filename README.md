@@ -210,7 +210,7 @@ Here, I will demonstrate how to create a three-node cluster, comprising one mast
 su - labuser
 minikube start --nodes 3 -p illusion
 ```
-It might take a few minutes, but Minikube will give you updates as it progresses and will finish with a 'Done' message.
+It might take a few minutes, but Minikube will give you updates as it progresses and will finish with a 'Done' message.<br>
 *This creates (among other things) 3 containers: illusion, illusion-m02 and illusion-m03, as well as a Docker network named illusion*.
 
 ### Get nodes
