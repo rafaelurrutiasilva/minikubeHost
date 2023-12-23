@@ -236,7 +236,7 @@ After deleting your application deployment, you might want to remove all the cre
 ```
 kubectl delete nodes illusion illusion-m02 illusion-m03
 ```
-*In my case all the nodes in mya illusion-cluster.*
+*In my case, all nodes in my illusion-cluster need to be deleted. Alternatively, you can directly delete the illusion-profile to terminate everything at once.* 
 
 ### Cleaning all in Minikube
 Before stopping Minikube, consider cleaning up everything by deleting the current cluster profile. Once that's done, proceed to stop Minikube. Follow the instructions below.
