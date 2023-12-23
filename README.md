@@ -1,5 +1,5 @@
 # Minikube Host on a Photon OS VM
-<img width="300" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MinikubeOnPhotonOS.svg" align=left><br>
+<img width="300" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MinikubeHost-PhotonOS_Minikube_Docker.svg)" align=left><br>
 Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. 
 <br>
 <br>
