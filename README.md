@@ -40,6 +40,8 @@ I have been developing a [Container Host using a Photon OS VM](https://github.co
     1. [Three node cluster](#three-node-cluster)
     2. [Get nodes](#get-nodes)
     3. [Labeling the worker nodes](#labeling-the-worker-nodes)
+    4. [Deleting Nodes](#Deleting-nodes)
+    5. [Cleaning all in Minikube](#cleaning-all-in-minikube)
 18. [Next - Hello Minikube](#next---hello-minikube)
 
 ## Introduction
@@ -235,7 +237,7 @@ kubectl delete nodes illusion illusion-m02 illusion-m03
 ```
 *In my case all the nodes in mya illusion-cluster.*
 
-### Cleaning all i Minikube
+### Cleaning all in Minikube
 Before stopping Minikube, consider cleaning up everything by deleting the current cluster profile. Once that's done, proceed to stop Minikube. Follow the instructions below.
 ```
 minikube profile list                        # Lists all valid minikube profiles and detects all possible invalid profiles
