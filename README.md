@@ -228,6 +228,21 @@ You may want to again using the `kubectl get nodes` command again.<br
 <img width="600" alt="GetLabelNodes" src="https://github.com/rafaelurrutiasilva/images/blob/main/printscreen/minikube_multi-node_cluster_02.png" align=center><br>
 *Figure 03 shows the result after labeling the nodes.*
 
+### Deleting Nodes 
+After deleting your application deployment, you might want to remove all the created cluster nodes. To do this, use the following command.
+```
+kubectl delete nodes illusion illusion-m02 illusion-m03
+```
+*In my case all the nodes in mya illusion-cluster.*
+
+### Cleaning all i Minikube
+Before stopping Minikube, consider cleaning up everything by deleting the current cluster profile. Once that's done, proceed to stop Minikube. Follow the instructions below.
+```
+minikube profile list                        # Lists all valid minikube profiles and detects all possible invalid profiles
+minikube delete --profile illusion           # Deletes a local Kubernetes cluster. This command deletes the VM, and removes all associated files. 
+```
+*In my case, delete everything associated with the illusion-profile, including the profile itself.*
+
 
 ## Next - Hello Minikube
 > [!TIP]
