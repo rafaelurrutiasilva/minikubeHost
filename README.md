@@ -244,8 +244,8 @@ Before stopping Minikube, consider cleaning up everything by deleting the curren
 minikube profile list                        # Lists all valid minikube profiles and detects all possible invalid profiles
 minikube delete --profile illusion           # Deletes a local Kubernetes cluster. This command deletes the VM, and removes all associated files. 
 ```
-*In my case, delete everything associated with the illusion-profile, including the profile itself.*
-
+*In my case, delete everything associated with the illusion-profile, including the profile itself, leaving only the Docker Network intact.*
+To delete the remaining network, use the command:` docker network rm illusion `
 
 ## Next - Hello Minikube
 > [!TIP]
