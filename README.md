@@ -59,8 +59,7 @@ This guide is designed for individuals seeking to explore and gain insights into
 
 ## Document Status
 > [!NOTE]  
-> Ready to be carefully reviewed by Patrik.
-
+> Ready to be carefully reviewed by [Patrik](https://github.com/patchon) or other friends who find their way to this repo.
 
 ## Disclaimer
 > [!CAUTION]
