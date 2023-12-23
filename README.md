@@ -70,8 +70,7 @@ This guide is designed for individuals seeking to explore and gain insights into
 This guide provides a rapid method to establish a home Kubernetes environment for testing modern applications on a single Minikube Host VM. It is important to note that this guide is not intended for use as a reference in a production environment and does not comprehensively cover all the security considerations required for such an environment.
 
 ## Environment
-> [!TIP]
-> The following computer environment was utilized. For details regarding container image versions and other components, please refer to the respective sections in the application documentation available here.
+The following computer environment was utilized. For details regarding container image versions and other components, please refer to the respective sections in the application documentation available here.
 ```
 Microsoft Windows 10 Enterprise, OS : Version 10.0.19045 N/A Build 19045
 VMware Workstation 17 Pro: Version 17.5.0 build-22583795
@@ -82,6 +81,8 @@ Virtual Machine: 2vCPU, 8GB vRAM, 50 GB vDisk
 Minikube version: v1.32.0
 Kubectl Client Version: v1.29.0
 ```
+> [!TIP]
+> While this was performed on a VMware Workstation with Photon OS, the process should be largely similar for your preferred Linux distribution in conjunction with another hypervisor like VirtualBox, for example
 
 ## Acknowledgments
 Big thanks to all the people involved in the material I refer to in my links! I would also like to express gratitude to everyone out there, including my colleagues and friends, who are creating things that help and inspire us to continue learning and exploring this never-ending world of computer technology.
