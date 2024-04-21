@@ -187,6 +187,11 @@ You can initiate port forwarding using the *kubectl* command. Log in as the *lab
 minikubeHostIP=$(ip address |grep inet |grep eth0 |awk '{print$2}' |sed 's,/24,,g')
 kubectl port-forward --address $minikubeHostIP service/hello-minikube 8080:8080
 ```
+or in one liner
+```
+kubectl port-forward --address $(ip address |grep inet |grep eth0 |awk '{print$2}' |sed 's,/24,,g') service/hello-minikube 8080:8080
+```
+
 ## Clean up and stop Minikube
 Now you can clean up the resources  created in the cluster.
 ```
